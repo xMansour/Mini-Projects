@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
     private static class MyAsyncTask extends AsyncTask<Integer, Integer, String> {
         private WeakReference<MainActivity> weakReference;
 
-        public MyAsyncTask(MainActivity mainActivity) {
+        MyAsyncTask(MainActivity mainActivity) {
             weakReference = new WeakReference<>(mainActivity);
         }
 
